@@ -34,7 +34,7 @@ Below are the steps to apply the original technique:
 === General User Functions
 - [x] User Profile
 - [ ] Read message / news
-- [ ] Read / search info
+- [x] Read / search info
 - [x] View their info
 
 === Admin Functions
