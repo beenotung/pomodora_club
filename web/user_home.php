@@ -78,9 +78,78 @@ while (mysqli_stmt_fetch($stmt)) {
         <br>
         <input type="submit" value="Change Username and Password">
     </form>
-    <form>
+    <form action="#">
         <h2>Timer</h2>
-        <input type="number" value="25">
+
+        <table>
+            <thead>
+            <tr>
+                <th>Minute</th>
+                <th>Second</th>
+                <th>ms</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><input type="number" value="25" id="m"></td>
+                <td><input type="number" value="00" id="s"></td>
+                <td><input type="number" value="00" id="ms"></td>
+            </tr>
+            </tbody>
+        </table>
+        <button onclick="timer_start()">Start</button>
+        <button onclick="timer_pause()">Pause</button>
+        <button onclick="timer_reset()">Reset</button>
+        <script>
+          var timer;
+          var last;
+          var _m = document.getElementById('m');
+          var _s = document.getElementById('s');
+          var _ms = document.getElementById('ms');
+
+          function timer_start() {
+            if (!timer) {
+              last = Date.now();
+              timer = setInterval(timer_update, 30);
+            }
+          }
+
+          function timer_pause() {
+            clearInterval(timer);
+            timer = undefined;
+          }
+
+          function timer_reset() {
+            _m.value = '25';
+            _s.value = '00';
+            _ms.value = '00';
+          }
+
+
+          function timer_update() {
+            var now = Date.now();
+            var diff = now - last;
+            last = now;
+
+            var m = _m.value * 1;
+            var s = _s.value * 1;
+            var ms = _ms.value * 1;
+
+            var old_time = ms + s * 1000 + m * 1000 * 60;
+            var new_time = old_time - diff;
+            new_time = Math.max(0, new_time);
+
+            ms = new_time % 1000;
+            new_time = (new_time - ms) / 1000;
+            s = new_time % 60;
+            new_time = (new_time - s) / 60;
+            m = new_time;
+
+            _m.value = m;
+            _s.value = s;
+            _ms.value = ms;
+          }
+        </script>
     </form>
 </main>
 <main>
