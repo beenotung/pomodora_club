@@ -59,7 +59,7 @@ function db_execute($force, $query, $types = "", ...$vars)
         leave(500);
         return false;
     }
-    if (!mysqli_stmt_bind_param($stmt, $types, ...$vars)) {
+    if ($types <> '' && !mysqli_stmt_bind_param($stmt, $types, ...$vars)) {
         if (!$force) {
             return false;
         }

@@ -39,7 +39,7 @@ Below are the steps to apply the original technique:
 
 === Admin Functions
 - [ ] Update/delete user account
-- [ ] Statistics
+- [x] Statistics
 - [ ] CRUD data for business need
 
 == Time Log
@@ -90,4 +90,7 @@ Below are the steps to apply the original technique:
 
 | Javascript control audio
 | https://www.w3schools.com/jsref/met_audio_play.asp
+
+| LIKE SQL with prepared statement in PHP
+| https://stackoverflow.com/questions/18527659/php-mysqli-prepared-statement-like
 |===

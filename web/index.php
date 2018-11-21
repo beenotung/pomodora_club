@@ -39,6 +39,10 @@
         </ul>
         <h2>Admin Menu</h2>
         <ul>
+            <li><a href="statistics.php">Statistics</a></li>
+        </ul>
+        <h2>DB Menu</h2>
+        <ul>
             <li><a href="install.php">Install</a></li>
             <li><a href="uninstall.php">Uninstall</a></li>
             <li><a href="reset.php">Reset</a></li>
