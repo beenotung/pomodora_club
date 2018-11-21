@@ -81,6 +81,10 @@ while (mysqli_stmt_fetch($stmt)) {
     <form action="#">
         <h2>Timer</h2>
 
+        <i>Play the audio manually to tune the volume</i>
+        <audio id="timer_audio" controls volume="1" loop>
+            <source src="audio/break.m4a" type="audio/mp4">
+        </audio>
         <table>
             <thead>
             <tr>
@@ -106,6 +110,7 @@ while (mysqli_stmt_fetch($stmt)) {
           var _m = document.getElementById('m');
           var _s = document.getElementById('s');
           var _ms = document.getElementById('ms');
+          var timer_audio = document.getElementById('timer_audio');
 
           function timer_start() {
             if (!timer) {
@@ -138,6 +143,11 @@ while (mysqli_stmt_fetch($stmt)) {
             var old_time = ms + s * 1000 + m * 1000 * 60;
             var new_time = old_time - diff;
             new_time = Math.max(0, new_time);
+
+            if (new_time === 0) {
+              timer_pause();
+              timer_audio.play();
+            }
 
             ms = new_time % 1000;
             new_time = (new_time - ms) / 1000;
