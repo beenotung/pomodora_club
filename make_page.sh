@@ -7,5 +7,6 @@ if [ "$name" == "" ]; then
   read -p "page file name: " name
 fi
 
+cd web
 cp -v empty.html "$name.html"
 cp -v empty.php "$name.php"
