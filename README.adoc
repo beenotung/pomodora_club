@@ -62,6 +62,9 @@ Below are the steps to apply the original technique:
 
 | Thu Nov 22 02:26:31 HKT 2018
 | finished database install, uninstall, and signup function
+
+| Thu Nov 22 06:51:43 HKT 2018
+| finished profile, user info and search page
 |===
 
 == Reference
