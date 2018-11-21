@@ -11,6 +11,7 @@ This time management method was developed by Francesco Cirillo in the late 1980s
 
 == Pomodoro Principles
 Below are the steps to apply the original technique:
+
 1. Decide which task to work on
 2. Set the pomodoro timer (for example 25 minutes)
 3. Work on the task
@@ -80,4 +81,10 @@ Below are the steps to apply the original technique:
 
 | PHP get all statement results
 | https://secure.php.net/manual/en/mysqli-stmt.bind-result.php
+
+| HTML audio type
+| https://html.com/attributes/audio-volume/
+
+| Javascript control audio
+| https://www.w3schools.com/jsref/met_audio_play.asp
 |===

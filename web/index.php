@@ -15,6 +15,7 @@
         <li><a href="signup.html">Signup</a></li>
         <li><a href="login.html">Login</a></li>
         <li><a href="search.html">Search</a></li>
+        <li><a href="README.html">ReadMe</a></li>
     </ul>
     <h2>Admin Menu</h2>
     <ul>
