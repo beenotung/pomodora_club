@@ -1,0 +1,68 @@
+= Pomodoro Club
+
+Demo Web Application for COMP2411 Students.
+
+== Background
+
+Pomodoro is a technique for effective working.
+It promotes focused working in task-based manner.
+
+This time management method was developed by Francesco Cirillo in the late 1980s.
+
+== Pomodoro Principles
+Below are the steps to apply the original technique:
+1. Decide which task to work on
+2. Set the pomodoro timer (for example 25 minutes)
+3. Work on the task
+4. When the timer rings, mark a checkmark.
+   If you have fewer than four checkmarks, take a short break (3-5 minutes);
+   If you have four checkmarks, take a longer break (15-30 minutes), reset the checkmarks
+5. Continue to work.
+   If the task is finished, go to step 1;
+   If the task is not finished, go to step 2.
+
+== Features
+
+=== General Functions
+- [ ] Welcome Page
+- [ ] Registration Page
+- [ ] Search Page
+- [ ] Advanced Search
+- [ ] Sort searched result
+
+=== General User Functions
+- [ ] User Profile
+- [ ] Read message / news
+- [ ] Read / search info
+- [ ] View their info
+
+=== Admin Functions
+- [ ] Update/delete user account
+- [ ] Statistics
+- [ ] CRUD data for business need
+
+== Time Log
+
+.Milestone Log
+|===
+| Timestamp | Item
+
+| Wed Nov 21 23:14:12 HKT 2018
+| Start writing the readme for idea
+
+| Thu Nov 22 00:01:20 HKT 2018
+| Finished writing the readme
+
+| Thu Nov 22 00:05:13 HKT 2018
+| finished logo
+|===
+
+== Reference
+
+.Reference Sources
+|===
+| Name | Url
+
+| Pomodoro Technique
+| https://en.wikipedia.org/wiki/Pomodoro_Technique
+|===
