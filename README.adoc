@@ -24,7 +24,7 @@ Below are the steps to apply the original technique:
 == Features
 
 === General Functions
-- [ ] Welcome Page
+- [x] Welcome Page
 - [ ] Registration Page
 - [ ] Search Page
 - [ ] Advanced Search
@@ -55,6 +55,9 @@ Below are the steps to apply the original technique:
 
 | Thu Nov 22 00:05:13 HKT 2018
 | finished logo
+
+| Thu Nov 22 00:49:58 HKT 2018
+| finished welcome page
 |===
 
 == Reference
