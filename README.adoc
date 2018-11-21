@@ -27,7 +27,7 @@ Below are the steps to apply the original technique:
 === General Functions
 - [x] Welcome Page
 - [x] Registration Page
-- [ ] Search Page
+- [x] Search Page
 - [ ] Advanced Search
 - [ ] Sort searched result
 
