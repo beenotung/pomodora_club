@@ -118,4 +118,14 @@ function db_query($force, $query)
     return true;
 }
 
+function db_query_free()
+{
+    global $link;
+    do {
+        if ($result = mysqli_store_result($link)) {
+            mysqli_free_result($result);
+        }
+    } while (mysqli_next_result($link));
+}
+
 ?>

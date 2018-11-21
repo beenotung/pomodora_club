@@ -20,6 +20,7 @@
     <ul>
         <li><a href="install.php">Install</a></li>
         <li><a href="uninstall.php">Uninstall</a></li>
+        <li><a href="reset.php">Reset</a></li>
     </ul>
 </menu>
 </body>

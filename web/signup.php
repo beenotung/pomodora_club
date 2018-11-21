@@ -1,4 +1,4 @@
-<a href="signup.html">Back</a><br>
+<a href="signup.html">Back to Signup</a><br>
 <?php
 $method = $_SERVER['REQUEST_METHOD'];
 if ($method <> 'POST') {
@@ -45,7 +45,7 @@ if (!$result) {
     }
 }
 
-echo 'Signup Succeed';
+echo 'Signup Succeed<br><a href="login.html">Go to Login</a>';
 leave(200);
 
 ?>
