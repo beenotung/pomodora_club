@@ -8,6 +8,7 @@ if (!mysqli_stmt_bind_result($stmt, $username)) {
     echo 'Fail to bind username';
     leave(500);
 }
+mysqli_stmt_fetch($stmt);
 mysqli_stmt_free_result($stmt);
 
 require_once 'common.php';
@@ -37,6 +38,18 @@ while (mysqli_stmt_fetch($stmt)) {
 </head>
 <body>
 <link rel="stylesheet" href="styles/common.css">
+<style>
+    main {
+        display: flex;
+        align-items: flex-start;
+        max-width: 100vw;
+    }
+
+    form {
+        display: inline-block;
+        margin: 1em;
+    }
+</style>
 <div text-center>
     <img src="imgs/logo.png">
     <h1>Welcome back to Pomodoro Club</h1>
@@ -47,70 +60,87 @@ while (mysqli_stmt_fetch($stmt)) {
         <li><a href="logout.php">Logout</a></li>
     </ul>
 </menu>
-<h2>Profile</h2>
-<form method="post" action="change_password.php">
-    <table>
-        <tbody>
-        <tr>
-            <td>Username</td>
-            <td><input type="text" name="username" value="<?php echo $username ?>"></td>
-        </tr>
-        <tr>
-            <td>Password</td>
-            <td><input type="password" name="password"></td>
-        </tr>
-        </tbody>
-    </table>
-    <br>
-    <input type="submit" value="Change Username and Password">
-</form>
-<h2>Tasks</h2>
-<form method="post" action="create_task.php">
-    Task Name:
-    <input type="text" name="task_name">
-    <br>
-    <input type="submit" value="Save New Task">
-</form>
-<form method="post" action="update_task.php">
-    <table>
-        <thead>
-        <tr>
-            <th>Done</th>
-            <th>Task Name</th>
-            <th>Finish Time</th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php
-        foreach ($tasks as $idx => $task) {
-            $task_id = $task['task_id'];
-            $task_name = $task['task_name'];
-            $finish_time = $task['finish_time'];
-            if ($task['done']) {
-                $checked = 'checked';
-            } else {
-                $checked = '';
-            }
+<main>
+    <form method="post" action="change_password.php">
+        <h2>Profile</h2>
+        <table>
+            <tbody>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username" value="<?php echo $username ?>"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+        <input type="submit" value="Change Username and Password">
+    </form>
+    <form>
+        <h2>Timer</h2>
+        <input type="number" value="25">
+    </form>
+</main>
+<main>
+    <form method="post" action="create_task.php">
+        <h2>New Task</h2>
+        Task Name:
+        <input type="text" name="task_name">
+        <br>
+        <input type="submit" value="Save New Task">
+    </form>
+    <form method="post" action="update_task.php">
+        <h2>Task List</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Done</th>
+                <th>Task Name</th>
+                <th>Finish Time</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php
+            foreach ($tasks as $idx => $task) {
+                $task_id = $task['task_id'];
+                $task_name = $task['task_name'];
+                $finish_time = $task['finish_time'];
+                if ($task['done']) {
+                    $checked = 'checked';
+                } else {
+                    $checked = '';
+                }
 //            echo '<hr>';
 //            var_dump($task);
 //            echo '<hr>';
-            echo "<tr>
+                echo "<tr>
 <td><input type='checkbox' name='tasks[$idx][done]' value='true' $checked></td>
 <input type='text' name='tasks[$idx][task_id]' value='$task_id' hidden>
 <td><input type='text' name='tasks[$idx][task_name]' value='$task_name'></td>
 <td><input type='text' value='$finish_time' readonly></td>
 </tr>";
-        }
-        ?>
-        </tbody>
-    </table>
-    <br>
-    <input type="submit" value="Update Tasks">
-</form>
+            }
+            ?>
+            </tbody>
+        </table>
+        <br>
+        <input type="submit" value="Update Tasks">
+    </form>
+</main>
 </body>
 </html>
+<h4>Debug:</h4>
 <?php
-echo '<hr> tasks = ';
+echo '<hr>';
+echo 'user id = <br>';
+var_dump($user_id);
+echo '<hr>';
+echo 'username = <br>';
+var_dump($username);
+echo '<hr>';
+echo 'tasks = <br>';
 var_dump($tasks);
 echo '<hr>';
 leave(200);
