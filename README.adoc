@@ -34,7 +34,7 @@ Below are the steps to apply the original technique:
 - [x] User Profile
 - [ ] Read message / news
 - [ ] Read / search info
-- [ ] View their info
+- [x] View their info
 
 === Admin Functions
 - [ ] Update/delete user account
@@ -71,4 +71,13 @@ Below are the steps to apply the original technique:
 
 | Pomodoro Technique
 | https://en.wikipedia.org/wiki/Pomodoro_Technique
+
+| Multiple (Array) value in FormData
+| https://codereview.stackexchange.com/questions/94493/submit-an-array-as-an-html-form-value-using-javascript
+
+| PHP foreach syntax
+| https://secure.php.net/manual/en/control-structures.foreach.php
+
+| PHP get all statement results
+| https://secure.php.net/manual/en/mysqli-stmt.bind-result.php
 |===

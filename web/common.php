@@ -1,6 +1,12 @@
 <?php
 
 global $link;
+
+function echo_p($body)
+{
+    echo '<p>', $body, '</p>';
+}
+
 function db_connect()
 {
     global $link;
@@ -34,7 +40,6 @@ function db_check_connection()
     }
 }
 
-
 function db_execute($force, $query, $types = "", ...$vars)
 {
     db_check_connection();
@@ -48,6 +53,8 @@ function db_execute($force, $query, $types = "", ...$vars)
 
         echo '<br> query = ';
         var_dump($query);
+
+        echo '<br> error =', mysqli_error($link);
 
         leave(500);
         return false;

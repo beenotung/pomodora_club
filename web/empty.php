@@ -1,4 +1,4 @@
-<a href="signup.html">Back</a><br>
+<button onclick="history.back()">Back</button><br>
 <?php
 $method = $_SERVER['REQUEST_METHOD'];
 if ($method <> 'POST') {
