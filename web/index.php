@@ -11,9 +11,9 @@
 </div>
 <menu>
     <ul>
-        <li><a href="signup">Signup</a></li>
-        <li><a href="login">Login</a></li>
-        <li><a href="search">Search</a></li>
+        <li><a href="signup.html">Signup</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="search.html">Search</a></li>
     </ul>
 </menu>
 </body>
