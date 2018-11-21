@@ -37,7 +37,7 @@ while (mysqli_stmt_fetch($stmt)) {
     <meta charset="UTF-8">
 </head>
 <body>
-<link rel="stylesheet" href="styles/common.css">
+<link rel="stylesheet" href="style/common.css">
 <style>
     main {
         display: flex;
@@ -51,7 +51,7 @@ while (mysqli_stmt_fetch($stmt)) {
     }
 </style>
 <div text-center>
-    <img src="imgs/logo.png">
+    <img src="img/logo.png">
     <h1>Welcome back to Pomodoro Club</h1>
 </div>
 <menu>

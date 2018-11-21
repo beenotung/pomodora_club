@@ -4,9 +4,9 @@
     <title>Pomodoro Club</title>
 </head>
 <body>
-<link rel="stylesheet" href="styles/common.css">
+<link rel="stylesheet" href="style/common.css">
 <div text-center>
-    <img src="imgs/logo.png">
+    <img src="img/logo.png">
     <h1>Welcome to Pomodoro Club</h1>
 </div>
 <menu>
