@@ -31,7 +31,7 @@ Below are the steps to apply the original technique:
 - [ ] Sort searched result
 
 === General User Functions
-- [ ] User Profile
+- [x] User Profile
 - [ ] Read message / news
 - [ ] Read / search info
 - [ ] View their info

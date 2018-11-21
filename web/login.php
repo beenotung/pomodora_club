@@ -39,9 +39,9 @@ echo '<p>Login success</p>';
 session_start();
 $_SESSION['user_id'] = $user_id;
 if ($type <> 'admin') {
-    echo '<a href="user_home.html">Go to user home</a>';
+    echo '<a href="user_home.php">Go to user home</a>';
 } else {
-    echo '<a href="admin_home.html">Go to admin home</a>';
+    echo '<a href="admin_home.php">Go to admin home</a>';
 }
 leave(200);
 ?>
