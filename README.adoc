@@ -65,6 +65,9 @@ Below are the steps to apply the original technique:
 
 | Thu Nov 22 06:51:43 HKT 2018
 | finished profile, user info and search page
+
+| Thu Nov 22 07:11:43 HKT 2018
+| finished basic statistics
 |===
 
 == Reference
