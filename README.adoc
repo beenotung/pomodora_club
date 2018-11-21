@@ -25,7 +25,7 @@ Below are the steps to apply the original technique:
 
 === General Functions
 - [x] Welcome Page
-- [ ] Registration Page
+- [x] Registration Page
 - [ ] Search Page
 - [ ] Advanced Search
 - [ ] Sort searched result
@@ -58,6 +58,9 @@ Below are the steps to apply the original technique:
 
 | Thu Nov 22 00:49:58 HKT 2018
 | finished welcome page
+
+| Thu Nov 22 02:26:31 HKT 2018
+| finished database install, uninstall, and signup function
 |===
 
 == Reference
