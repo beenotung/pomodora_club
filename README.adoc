@@ -42,6 +42,12 @@ Below are the steps to apply the original technique:
 - [x] Statistics
 - [ ] CRUD data for business need
 
+== Screenshots
+
+image::doc/1.png[Welcome Page]
+
+image::doc/2.png[User Profile]
+
 == Time Log
 
 .Milestone Log
