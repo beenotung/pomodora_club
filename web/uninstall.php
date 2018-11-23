@@ -1,4 +1,4 @@
-<a href="/">Back</a><br>
+<a href="./">Back</a><br>
 <?php
 require_once 'common.php';
 

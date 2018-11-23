@@ -5,7 +5,7 @@ if ($method <> 'POST') {
     http_response_code(400);
     echo '<code>Error: Only support POST Method</code>';
     echo "<p>Used $method Method</p>";
-    echo '<a href="/">Back to Home</a>';
+    echo '<a href="./">Back to Home</a>';
     exit;
 }
 ?>
